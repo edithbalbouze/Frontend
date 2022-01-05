@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            gap: 16px;
+            place-content: center;
+        }
+        .product-card {
+            width: 240px;
+        }
+        .product-card img {
+            width: 240px;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+        }
+        .product-info figure img {
+            width: 35px;
+            height: 35px;
+        }
+        .product-info figure {
+            margin: 0;
+        }
+        .product-info div p:nth-child(1) {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+        .product-info div p:nth-child(2) {
+            font-size: var(--sm);
+            margin-top: 0;
+            margin-bottom: 0;
+            color: var(--very-light-pink);
+        }
+        @media (max-width: 640px) {
+            .cards-container {
+                grid-template-columns: repeat(auto-fill, 140px);
+            }
+            .product-card {
+                width: 140px;
+            }
+            .product-card img {
+                width: 140px;
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+   <section class="main-container">
+       <div class="cards-container">
+           <div class="product-card">
+               <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2020/12/21/goods-first-img/1623611128449531698.jpg" alt=""> 
+               <div class="product-info">
+                   <div>
+                       <p>$12.22</p>
+                       <p>Short dress (Red wine)</p>
+                   </div>
+                   <figure>
+                       <img src="./icons/bt_add_to_cart.svg" alt="">
+                   </figure>
+               </div>
+            </div>
+            <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2021/11/29/goods-first-img/1638990265944665580.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$17.87</p>
+                        <p>Short dress (Green)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2021/04/19/goods-first-img/1625598528524040522.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$19.75</p>
+                        <p>Short dress (Brown)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2021/01/20/goods-first-img/1625522907997758378.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$11.28</p>
+                        <p>Short dress (Light brown)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2021/02/24/goods-first-img/1626289451516667578.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$9.40</p>
+                        <p>Short dress (Light pink)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2021/01/21/goods-first-img/1625524122230972567.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$12.29</p>
+                        <p>Short dress (Beige)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2021/07/21/goods-first-img/1639420762684766438.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$10.34</p>
+                        <p>Bikini (Brown)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2020/09/15/goods-first-img/1617910203061398082.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$15.04</p>
+                        <p>Bikini (Tropic Orange)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2021/03/31/goods-first-img/1617735520001632922.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$13.16</p>
+                        <p>Bikini (Blue)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2020/07/23/goods-first-img/1620665648759967185.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$19.28</p>
+                        <p>Bikini (White)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2019/12/20/goods-first-img/1604274092338419889.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$9.40</p>
+                        <p>Skint (White)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2019/11/18/goods-first-img/1588212932233997189.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$18.20</p>
+                        <p>Bikini and short pant (Blue)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2021/09/15/goods-first-img/1635966920181677502.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$15.04</p>
+                        <p>T-shirt (Gray)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2021/04/07/goods-first-img/1629244711637108496.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$17.39</p>
+                        <p>Top (Olive green)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2021/10/14/goods-first-img/1635372816369923272.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$15.79</p>
+                        <p>Short top (Brown)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2019/11/29/goods-first-img/1577248329768288458.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$15.98</p>
+                        <p>Short top (Green)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2021/01/11/goods-first-img/1623006463132750796.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$10.91</p>
+                        <p>T-shirt (Gray)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2021/09/30/goods-first-img/1636484968162759243.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$15.51</p>
+                        <p>shirt (Brown)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2020/06/11/goods-first-img/1602618725131375904.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$14.10</p>
+                        <p>Skirt (Light blue)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+             </div>
+             <div class="product-card">
+                <img src="https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2020/10/26/goods-first-img/1605057445698447581.jpg" alt=""> 
+                <div class="product-info">
+                    <div>
+                        <p>$9.40</p>
+                        <p>Skirt (Black)</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+       </div>
+   </section> 
+</body>
+</html>
